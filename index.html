@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>GPS Візуалізація - Фінальна версія</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="app-container">
+    <h1>Візуалізація вимірювань GPS</h1>
+
+    <section class="config-section">
+        <div class="input-row">
+            <div class="field">
+                <label>Швидкість супутників (км/год)</label>
+                <input type="number" id="satelliteSpeed" value="10000">
+            </div>
+            <div class="field">
+                <label>Швидкість об'єкта (км/год)</label>
+                <input type="number" id="objectSpeed" value="100">
+            </div>
+            <button id="sendConfig">Оновити параметри</button>
+        </div>
+        <p>Статус: <span id="wsStatus" class="status-off">Відключено</span></p>
+    </section>
+
+    <div class="chart-container">
+        <canvas id="gpsChart"></canvas>
+    </div>
+
+    <div id="dataLog" class="log-window"></div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>

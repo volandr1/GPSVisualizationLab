@@ -1,0 +1,72 @@
+﻿body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #1a1a1a;
+    color: #eee;
+    padding: 20px;
+    margin: 0;
+}
+
+.app-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #2a2a2a;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.config-section {
+    background: #333;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.input-row {
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+.field { display: flex; flex-direction: column; flex: 1; }
+label { font-size: 11px; margin-bottom: 5px; color: #bbb; text-transform: uppercase; }
+
+input {
+    background: #444;
+    border: 1px solid #555;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 11px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.status-on { color: #28a745; font-weight: bold; }
+.status-off { color: #dc3545; font-weight: bold; }
+
+.chart-container {
+    height: 450px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.log-window {
+    background: #000;
+    color: #0f0;
+    padding: 15px;
+    height: 140px;
+    overflow-y: auto;
+    font-family: monospace;
+    font-size: 13px;
+    border-radius: 4px;
+}
